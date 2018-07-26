@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Version ruby
 
-Things you may want to cover:
+ruby '2.5.1'
 
-* Ruby version
 
-* System dependencies
+### Dépendances du système
 
-* Configuration
+La Gem Faker est utilisé.
 
-* Database creation
+### Installation
 
-* Database initialization
+Entrez les commandes suivantes dans votre Terminal.
 
-* How to run the test suite
+* **Etape :** 
+* Installations des gem
+* Initialisation de la base de donnée
+* Remplissage de la Base de Donnée
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+```
+$ bundle install
+```
+```
+$ rails db:migrate
+```
+```
+$ rails db:seed 
+```
 
-* ...
+puis Ouvrir le fichier 'development.sqlite3' dans votre outil de visualisation de BDD (exemple: 'DB Browser for SQLite')
